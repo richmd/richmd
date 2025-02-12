@@ -23,6 +23,22 @@ $ yarn add richmd
 - [Usage for Vue](./docs/usage-vue.md)
 - [Usage Webpack](./docs/Setup-webpack.md)
 
+### Retrieve Abstract Syntax Tree (AST) Data
+You can retrieve Abstract Syntax Tree (AST) data using the `parseTree` method.
+This is useful for customizing code generation on your own.
+
+```js
+import { parseTree } from 'richmd';
+
+const text = `# aaaa
+## aaaaa
+
+**aaaaaa**
+`
+
+const ast = parseTree(text);
+```
+
 
 ## Markdown Syntax
 Please read [Richmd Markdown Syntax Documentation](./docs/md-syntax.md).

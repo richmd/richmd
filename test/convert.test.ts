@@ -120,35 +120,35 @@ describe("paragraph convert", () => {
 describe("blockquote", () => {
   it("case 1", () => {
     const text = `> text`;
-    const convertedResult = `<blockquote class="blockquote"><span class="span">text</span></blockquote>`;
+    const convertedResult = `<blockquote class="blockquote"><span class="span">text<br></span></blockquote>`;
     const result = richmd(text).replace(/\n/g, "");
     expect(result).toEqual(convertedResult);
   });
 
   it("case 2", () => {
     const text = `> text\ntext`;
-    const convertedResult = `<blockquote class="blockquote"><span class="span">text</span><span class="span">text</span></blockquote>`;
+    const convertedResult = `<blockquote class="blockquote"><span class="span">text<br></span><span class="span">text<br></span></blockquote>`;
     const result = richmd(text).replace(/\n/g, "");
     expect(result).toEqual(convertedResult);
   });
 
   it("case 3", () => {
     const text = `> text\ntext\n\ntext`;
-    const convertedResult = `<blockquote class="blockquote"><span class="span">text</span><span class="span">text<br></span></blockquote><span class="span">text</span>`;
+    const convertedResult = `<blockquote class="blockquote"><span class="span">text<br></span><span class="span">text<br></span></blockquote><span class="span">text</span>`;
     const result = richmd(text).replace(/\n/g, "");
     expect(result).toEqual(convertedResult);
   });
 
   it("case 4", () => {
     const text = `> text\n> \ntext\n\ntext`;
-    const convertedResult = `<blockquote class="blockquote"><span class="span">text</span><span class="span"></span><span class="span">text<br></span></blockquote><span class="span">text</span>`;
+    const convertedResult = `<blockquote class="blockquote"><span class="span">text<br></span><span class="span"></span><span class="span">text<br></span></blockquote><span class="span">text</span>`;
     const result = richmd(text).replace(/\n/g, "");
     expect(result).toEqual(convertedResult);
   });
 
   it("case 5", () => {
     const text = `> text\n\ntext`;
-    const convertedResult = `<blockquote class="blockquote"><span class="span">text</span></blockquote><span class="span">text</span>`;
+    const convertedResult = `<blockquote class="blockquote"><span class="span">text<br></span></blockquote><span class="span">text</span>`;
     const result = richmd(text).replace(/\n/g, "");
     console.log(result)
     expect(result).toEqual(convertedResult);
@@ -156,7 +156,7 @@ describe("blockquote", () => {
 
   it("case 6", () => {
     const text = `> text\ntext\ntext\n\ntext`;
-    const convertedResult = `<blockquote class="blockquote"><span class="span">text</span><span class="span">text<br>text<br></span></blockquote><span class="span">text</span>`;
+    const convertedResult = `<blockquote class="blockquote"><span class="span">text<br></span><span class="span">text<br>text<br></span></blockquote><span class="span">text</span>`;
     const result = richmd(text).replace(/\n/g, "");
     expect(result).toEqual(convertedResult);
   });

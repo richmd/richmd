@@ -144,8 +144,8 @@ export const parser = (str: string) => {
         match = line.match(BLOCKQUOTE_REGEX);
         if (match === null) continue;
         parseParagraph(stack);
-        stack = "";
         ast.push(new nodes.Blockquote(match[2], match[1].length));
+        stack = "";
       } else if (
         mode === MODE_DEFAULT &&
         HORIZONTAL_RULE_REGEX.test(line) &&

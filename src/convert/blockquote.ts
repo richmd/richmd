@@ -42,10 +42,10 @@ export const blockquote = (values: Convert[][]) => {
           break;
         }
         default: {
-          if (data[val].value === "\n") {
-            text += "<br>";
-          } else {
+          if (data[val].value.match(/\n/)) {
             text += data[val].value.replace(/\n/g, "<br>");
+          } else {
+            text += data[val].value + "<br>";
           }
           break;
         }

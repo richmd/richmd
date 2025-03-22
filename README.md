@@ -14,7 +14,7 @@ As a result, we’ve found it necessary to reconsider the future direction of Ri
 We feel there are significant challenges particularly around CSS implementation, and we now need to account for a wider range of use cases in its design.
 Therefore, we would like to share with you the development plans for Richmd moving forward.
 
-## Architecture Overhaul & Major Release of `richmd`, `richmd-react`, and `richmd-vue`
+## Architecture Overhaul of `richmd`, `richmd-react`, and `richmd-vue`
 We had been experimentally releasing `richmd-react` and `richmd-vue` as supporting packages for Richmd, but we have now decided to rebuild these from the ground up and officially release them as part of a major version.
 
 Moving forward, the package names will be changed as follows:

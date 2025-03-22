@@ -29,12 +29,12 @@
   "author": "nappa <masa.yanagawa721@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/richmdjs/richmd.git"
+    "url": "https://github.com/richmd/richmd.git"
   },
   "bugs": {
-    "url": "https://github.com/richmdjs/richmd.git/issues"
+    "url": "https://github.com/richmd/richmd.git/issues"
   },
-  "homepage": "https://github.com/richmdjs/richmd.git",
+  "homepage": "https://github.com/richmd/richmd.git",
   "license": "MIT",
   "dependencies": {
     "commander": "^11.0.0",

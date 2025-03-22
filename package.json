@@ -1,6 +1,6 @@
 {
   "name": "richmd",
-  "version": "2.2.20",
+  "version": "2.3.0",
   "description": "Richmd is a tool for making Rich contents Markdown language.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -16,7 +16,7 @@
     "lint:prettier:fix": "prettier --write ./src",
     "lint": "pnpm run lint:eslint && pnpm run lint:prettier",
     "lint:fix": "pnpm run lint:eslint:fix && pnpm run lint:prettier:fix",
-    "build:publish": "pnpm build && pnpm publish"
+    "prepare": "pnpm run build"
   },
   "keywords": [
     "markdown",

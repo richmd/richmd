@@ -127,6 +127,12 @@ export const convertMdTree = (tree: Tree) => {
   return htmlValue;
 };
 
+/**
+ * @deprecated
+ */
 export const richmd = (text: string) => convertMdTree(parseMdTree(text));
 
+/**
+ * @deprecated
+ */
 export const parseTree = (text: string) => parseMdTree(text);

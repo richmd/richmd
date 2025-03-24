@@ -1,6 +1,6 @@
 {
   "name": "richmd",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Richmd is a tool for making Rich contents Markdown language.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

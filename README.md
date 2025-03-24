@@ -12,10 +12,10 @@ Migration is simple and straightforward.
 
 ## Migrating from v2 to v3
 
-Install `@richmd/core`:
+Install `@richmd/js`:
 
 ```sh
-$ pnpm add @richmd/core
+$ pnpm add @richmd/js
 ```
 
 Update your imports as follows:
@@ -23,8 +23,8 @@ Update your imports as follows:
 ```diff
 -import { richmd } from 'richmd'
 -import 'richmd/richmd.css'
-+import { richmd } from '@richmd/core'
-+import "@richmd/core/dist/richmd.css";
++import { richmd } from '@richmd/js'
++import "@richmd/js/dist/richmd.css";
 ```
 
 ## Upcoming Schedule
